@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio | CanaryCode</title>
+  <link rel="icon" type="image/png" href="images/minlogo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <img src="images/logo.png" alt="CanaryCode Logo" />
+        <h1>CanaryCode</h1>
+      </div>
+      <nav>
+        <ul>
+          <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Link</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reemplaza "TU_USUARIO" por el nombre real de tu cuenta -->
+  <a href="https://www.instagram.com/canary_code?igsh=MWZlOXVjZW8yd25sZA==" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+      alt="Instagram"
+      class="instagram-icon"
+    >
+  </a>
+
+</body>
+</html>
+
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes.html">Quiénes Somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Soluciones de software inteligentes</h2>
+      <p>CanaryCode desarrolla herramientas digitales que impulsan tu crecimiento.</p>
+    </div>
+  </section>
+
+<!-- CARRUSEL -->
+<section class="carousel-container">
+  <div class="carousel" id="carousel">
+    <img src="images/image2.png" alt="Imagen 1">
+    <img src="images/image3.png" alt="Imagen 2">
+    <img src="images/image4.png" alt="Imagen 3">
+  </div>
+  <div class="carousel-controls">
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CanaryCode. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('#carousel img');
+
+    function showSlide(index) {
+      images.forEach((img, i) => {
+        img.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showSlide(currentIndex);
+    }
+
+    // Mostrar primer slide al cargar
+    showSlide(currentIndex);
+  </script>
+</body>
+</html>
